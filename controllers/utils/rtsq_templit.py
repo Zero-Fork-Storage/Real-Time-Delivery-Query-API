@@ -91,4 +91,4 @@ def gen(name, t_invoice):
 
 	return res
 
-print(json.dumps(gen(name="CJ대한통운", t_invoice="0000000000"), indent=4, ensure_ascii=False))
+# print(json.dumps(gen(name="CJ대한통운", t_invoice="0000000000"), indent=4, ensure_ascii=False))
