@@ -1,4 +1,4 @@
 Real-Time Delivery Query API
 ====
-
-Backend API of ZERODAY Discord Bot
+Real-Time Delivery Query API
+Powerd by Sanic
