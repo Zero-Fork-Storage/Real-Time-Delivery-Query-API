@@ -68,5 +68,4 @@ request(options, function (error, response, body) {
 
 ## LICENSE
 Copyright 2019 Euiseo Cha (차의서) | zeroday0619 \
-https://github.com/zeroday0619/Real-Time-Delivery-Query-API/blob/master/LICENSE
-
+[MIT License](https://github.com/zeroday0619/Real-Time-Delivery-Query-API/blob/master/LICENSE)
