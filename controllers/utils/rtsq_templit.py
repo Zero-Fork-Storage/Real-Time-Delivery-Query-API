@@ -1,11 +1,12 @@
 from typing import Dict, Any, Union
-
 from controllers.utils.rtsq_library.rtsq_array import arrayConverter
 from controllers.utils.rtsq_library.rtsq_level import level
 from controllers.utils.rtsq_library.dst_co import Code
-from controllers.utils.test import rtsq
-
+from controllers.utils.rtsq import rtsq
+from fake_useragent import UserAgent
+import asyncio
 import json
+
 
 def gen(name, t_invoice):
 	res: Dict[str, Union[Optional[str], Any]] = {
@@ -17,9 +18,13 @@ def gen(name, t_invoice):
 		'estimate': '알 수 없음',
 		'status': '알 수 없음',
 	}
-
 	t_code = Code.search(name=name)
-	resp = rtsq.get(t_code, t_invoice)
+
+
+	base = rtsq(t_code=t_code, t_invoice=t_invoice)
+	loop = asyncio.get_event_loop()
+	resp = loop.run_until_complete(base.rtsq_base())
+	#resp = rtsq_get(t_code="04", t_invoice="0000000000").getrtsq()
 
 	try:
 		if resp['tracking_info']['ErrorMsg']:

@@ -1,5 +1,6 @@
 from sanic import Sanic
 from sanic import request
+from sanic import response
 from routes import api
 
 app = Sanic(__name__)

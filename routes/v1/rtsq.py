@@ -5,6 +5,7 @@ from sanic.response import text
 from sanic import response
 from sanic import request
 
+
 rtsq_Api = Blueprint('v1.rtsq')
 
 
