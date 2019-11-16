@@ -46,7 +46,7 @@ curl -X POST \
 }'
 ```
 - node js
-```nodejs
+```javascript
 var request = require("request");
 
 var options = { method: 'POST',
