@@ -13,9 +13,10 @@ and provides processed and processed JSON with better readability than existing 
 ## Usage
 **1. Install prerequisites**
 ```sh
+0. $ git clone https://github.com/zeroday0619/Real-Time-Delivery-Query-API.git 
 1. $ pip install -r requirements.txt
-2. $ pip3 install -r requirements.txt
-4. $ python3 -m pip install -r requirements.txt
+1. $ pip3 install -r requirements.txt
+1. $ python3 -m pip install -r requirements.txt
 ```
 
 **2. Run**
